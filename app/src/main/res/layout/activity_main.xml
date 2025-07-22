@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="48dp"
+        android:paddingBottom="48dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Investment Snapshot"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E1E1E"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Add Asset Button -->
+        <Button
+            android:id="@+id/btnAddAsset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Asset"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="32dp"
+            android:padding="12dp"
+            android:elevation="4dp" />
+
+        <!-- Asset Card 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Land"
+                android:textSize="18sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KES 50,000"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Asset Card 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:elevation="2dp"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="SACCO"
+                android:textSize="18sp"
+                android:textColor="#333333" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KES 10,000"
+                android:textStyle="bold"
+                android:textColor="#1A73E8"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

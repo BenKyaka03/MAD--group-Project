@@ -1,0 +1,39 @@
+[versions]
+kotlin = "1.9.10"
+room = "2.6.1"
+compose-bom = "2024.05.00"
+lifecycle = "2.8.0"
+activity = "1.9.0"
+appcompat = "1.6.1"
+core-ktx = "1.13.1"
+
+[plugins]
+android-application = { id = "com.android.application", version = "8.4.0" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version = "1.9.10" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version = "1.5.12" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version = "1.9.10" } # ✅ Include this
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+
+# Compose
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Room
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+# Testing
+junit = { group = "junit", name = "junit", version = "4.13.2" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version = "1.1.5" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version = "3.5.1" }
+ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
